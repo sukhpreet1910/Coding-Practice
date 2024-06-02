@@ -47,6 +47,11 @@ def set_zeros1(arr):
 
 
 arr = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
-set_zeros1(arr)
+# set_zeros1(arr)
+
+
+# Optimal Solution 
+
+
 
 
