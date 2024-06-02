@@ -68,7 +68,7 @@ def smallest(n):
 
 
 
-print(smallest(296837))
+print(smallest(935855753))
 
 
 
