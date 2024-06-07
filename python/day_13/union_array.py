@@ -1,14 +1,18 @@
 def brute_union(arr1, arr2):
-    n = max(len(arr1), len(arr2))
-    temp = []
-    for i in range(len(arr1)):
-        if arr1[i] not in temp:
-            temp.append(arr1[i])
-        if arr2[i] not in temp:
-            temp.append(arr2[i])
-        
+    s = set()
+    union = []
+
+    for nums in arr1:
+        s.add(nums)
+
+    for nums in arr2:
+        s.add(nums)
     
-    print(temp)
+    for nums in s:
+        union.append(nums)
+
+    return union
+    
 
 
 
@@ -49,7 +53,7 @@ def union(arr1, arr2):
 
 
 
-arr1 = [1, 2, 3, 4, 5]
-arr2 = [5, 6, 7, 10, 20, 30, 40, 50]
+arr1 = [-7, 8]
+arr2 = [-8, -3, 8]
 
-union(arr1, arr2)
+print(brute_union(arr1, arr2))
