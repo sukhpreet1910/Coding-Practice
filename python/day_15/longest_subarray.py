@@ -1,6 +1,7 @@
 # subarray: contiguous part of the array
 
 # Two pointer Approach
+# If array has only positive elements and zeroes 
 def longest_subarray(arr, k):
     left, right = 0, 0
     sum = arr[0]
