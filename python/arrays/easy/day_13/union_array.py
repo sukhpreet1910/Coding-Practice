@@ -12,8 +12,6 @@ def brute_union(arr1, arr2):
         union.append(nums)
 
     return union
-    
-
 
 
 def union(arr1, arr2):
@@ -46,11 +44,6 @@ def union(arr1, arr2):
         j += 1
         
     print(temp)
-
-            
-
-
-
 
 
 arr1 = [-7, 8]

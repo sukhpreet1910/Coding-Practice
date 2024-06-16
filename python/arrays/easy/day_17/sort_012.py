@@ -51,7 +51,6 @@ def sort_colors(nums):
             mid += 1
         else:
             nums[mid], nums[high] = nums[high], nums[mid]
-            mid += 1
             high -= 1
     
     return nums
