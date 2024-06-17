@@ -1,0 +1,1 @@
+Majority Element (>n/2 times): https://leetcode.com/problems/majority-element/description/
