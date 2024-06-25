@@ -1,3 +1,7 @@
+# this is the solution if the number of positive and negative elements is equal
+
+
+
 def brute_rearrange_array(nums):
     pos = []
     neg = []
