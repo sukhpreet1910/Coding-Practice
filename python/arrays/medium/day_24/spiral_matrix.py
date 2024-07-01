@@ -1,7 +1,3 @@
-# Brute Force Pseudo Code 
-# 
-
-
 def spiral(nums):
     
     ans = []
@@ -25,16 +21,18 @@ def spiral(nums):
 
         right -= 1
 
+        
+        if top <= bottom:
+            for i in range(right, left - 1, -1):
+                ans.append(nums[bottom][i])
 
-        for i in range(right, left - 1, -1):
-            ans.append(nums[bottom][i])
+            bottom -=1
 
-        bottom -=1
+        if left <= right:
+            for i in range(bottom, top - 1, - 1):
+                ans.append(nums[i][left])
 
-        for i in range(bottom, top - 1, - 1):
-            ans.append(nums[i][left])
-
-        left += 1
+            left += 1
 
     return ans
 
